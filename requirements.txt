@@ -75,7 +75,6 @@ mdurl==0.1.2
 more-itertools==8.7.0
 mygene==3.2.2
 nest-asyncio==1.5.6
-networkx==3.2.1
 numba==0.58.1
 numpy==1.26.4
 openpyxl==3.0.10

@@ -44,13 +44,15 @@ if app_mode == 'Home':
     st.image('image.jpg')
     st.markdown('''The following are the steps to utilise this tool:--
     
-    1. If accessing through PC/Laptop device - On your Left hand side of the page, under "Select Page", choose "Predict"
-    via the drop down list. 
+    1. If accessing through PC/Laptop device - On your Left hand side of the page, 
+    under "Select Page", choose "Predict" via the drop down list. 
     
-    2. If accessing through a mobile device, head to the top right corner of the screen, tap on the ">" button, from the 
-    pane that shows up, follow the same step as the previous one.
+    2. If accessing through a mobile device, head to the top right corner of the 
+    screen, tap on the ">" button, from the pane that shows up, follow the 
+    same step as the previous one.
     
-    3. Use the sliders to input details for the player whose potential is to be determined.
+    3. Use the sliders to input details for the player whose potential is 
+    to be determined.
     
     4. Click on "Predict" button at the end of the page to receive results. ''')
      

@@ -1,0 +1,4 @@
+Orange-2.7.8
+pandas
+numpy
+streamlit

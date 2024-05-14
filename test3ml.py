@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import plotly.express as px
 from Orange.data import *
 
 app_mode = st.sidebar.selectbox('Select Page',['Home','Predict'])
@@ -38,6 +39,9 @@ def predictions(age,height_cm,weight_kg,eur_value,eur_wage,overall,pac,sho,pas,d
         preds = model_loaded.domain.class_var.str_val(output)
         preds = "Expected Rating of the Player: " + preds
         st.success(preds)
+        df = pd.DataFrame(dict(r=[pac, sho, dri, defence, phy],theta=['Pace','Shooting','Dribbling','Defence', 'Physicality']))
+        fig = px.line_polar(df, r='r', theta='theta', line_close=True)
+        fig.show()
 
 if app_mode == 'Home': 
     st.title('Player Potential Estimator')

@@ -41,7 +41,7 @@ def predictions(age,height_cm,weight_kg,eur_value,eur_wage,overall,pac,sho,pas,d
         st.success(preds)
         df = pd.DataFrame(dict(r=[pac, sho, dri, defence, phy],theta=['Pace','Shooting','Dribbling','Defence', 'Physicality']))
         fig = px.line_polar(df, r='r', theta='theta', line_close=True)
-        fig.show()
+        st.plotly_chart(fig)
 
 if app_mode == 'Home': 
     st.title('Player Potential Estimator')
